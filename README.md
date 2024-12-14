@@ -28,13 +28,13 @@ Ekstensi ini menggunakan [API myQuran](https://api.myquran.com/) untuk mendapatk
 
 1. **Mengatur Berdasarkan Indonesia City**:
 
-   - Buka Command Palette (tekan `Ctrl+Shift+P` atau `Cmd+Shift+P` di Mac).
-   - Ketik `Sholat Reminder: Search Indonesia City` dan pilih perintah tersebut.
+   - Buka Command Palette (tekan `Ctrl+Shift+A` atau `Cmd+Shift+A` di Mac).
+   - Ketik `Sholat Reminder: Search Indonesian City` dan pilih perintah tersebut.
    - Masukkan City sesuai lokasi Anda untuk menampilkan jadwal sholat yang sesuai.
 telah City ID berhasil diperbarui, VSCode akan otomatis reload untuk menerapkan perubahan.
 
 2. **Menampilkan/Menyembunyikan City Name**:
-   - Buka Command Palette (tekan `Ctrl+Shift+P` atau `Cmd+Shift+P` di Mac).
+   - Buka Command Palette (tekan `Ctrl+Shift+A` atau `Cmd+Shift+A` di Mac).
    - Ketik `Sholat Reminder: Toogle City Name` dan pilih perintah tersebut.
    - Maka City Name pada Status Bar akan tampil/hilang sesuai kebutuhan Anda.
 
