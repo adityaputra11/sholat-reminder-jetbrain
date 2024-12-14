@@ -1,0 +1,1 @@
+# sholat-reminder-jetbrain
