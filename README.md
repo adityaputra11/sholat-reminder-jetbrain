@@ -9,6 +9,7 @@
 ## Fitur
 
 - **Search Indonesian City**: Atur City untuk jadwal sholat di lokasi Anda.
+- **Show and Hide City**: Menampilkan dan menyembunyikan city.
 - **Status Bar Reminder**: Menampilkan countdown menuju waktu sholat berikutnya di status bar.
 - **Automatic Reload**: Mereload ekstensi secara otomatis setelah City ID diperbarui.
 
