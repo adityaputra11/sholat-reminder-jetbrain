@@ -1,0 +1,53 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.adityaputra.sholatreminder</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Sholat Reminder</name>
+
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="aditya@sholatreminder.pro" url="https://www.sholatreminder.pro">Sholat Reminder</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>Effortless sholat reminder for all users.</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory implementation="com.adityaputra.sholatreminder.PrayerWidgetFactory" id="com.adityaputra.sholatreminder.statusbar"/>
+    </extensions>
+    <actions>
+        <action
+                id="com.adityaputra.sholatreminder.action.search.indonesia"
+                class="com.adityaputra.sholatreminder.action.PrayerTimeActions"
+                text="Sholat Reminder: Search Indonesian City"
+                description="Search Indonesian city">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+<!--        <action-->
+<!--                id="com.adityaputra.sholatreminder.action.refresh"-->
+<!--                class="com.adityaputra.sholatreminder.action.PrayerTimeActions"-->
+<!--                text="Sholat Reminder: Refresh"-->
+<!--                description="Execute custom command">-->
+<!--            <add-to-group group-id="ToolsMenu" anchor="first"/>-->
+<!--        </action>-->
+        <action
+                id="com.adityaputra.sholatreminder.toggle.city"
+                class="com.adityaputra.sholatreminder.action.CityToggleActions"
+                text="Sholat Reminder: Show City Name"
+                description="Toogle show or hide city name">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+          </action>
+    </actions>
+
+</idea-plugin>
